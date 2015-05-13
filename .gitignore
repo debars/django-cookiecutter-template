@@ -1,2 +1,5 @@
 *.pyc
 db.sqlite3
+.idea
+settings/production.py
+media
