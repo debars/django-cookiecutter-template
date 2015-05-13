@@ -9,4 +9,9 @@ public folder.
 ## Usage
 ```bash
 $ django-admin.py startproject --template=https://github.com/MichaelCombs28/django-cookiecutter-template/archive/master.zip --extension=py,rst,html <project_name>
-```	
+```	
+
+## Manage Commands
+```bash
+$ ./manage.py runserver --settings=<project_name>.settings.local
+```
