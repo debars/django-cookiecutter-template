@@ -40,6 +40,11 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
+STATICFILES_FINDERS = (
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder"
+)
+
 ROOT_URLCONF = '{{ project_name }}.urls'
 
 WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
