@@ -14,4 +14,8 @@ $ django-admin.py startproject --template=https://github.com/MichaelCombs28/djan
 ## Manage Commands
 ```bash
 $ ./manage.py runserver --settings=<project_name>.settings.local
+# or
+$ export DJANGO_SETTINGS_MODULE=<project_name>.settings.local
+# then
+$ ./manage.py runserver
 ```
