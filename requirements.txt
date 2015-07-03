@@ -1,5 +1,25 @@
-Django==1.8.1
-Pillow==2.8.1
-argparse==1.2.1
-six==1.9.0
-wsgiref==0.1.2
+# Main
+Django
+Pillow
+argparse
+six
+wsgiref
+django-bower
+django-braces
+django-pipeline
+requests
+sphinx
+
+# Web Server
+gunicorn
+
+# Database
+psycopg2 # I heavily prefer postgres
+
+# Testing
+django-debug-toolbar
+django-casper
+locustio # load tester
+mock
+selenium
+coverage
