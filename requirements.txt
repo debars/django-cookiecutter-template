@@ -6,6 +6,7 @@ six
 wsgiref
 django-bower
 django-braces
+django-extensions
 django-pipeline
 requests
 sphinx
