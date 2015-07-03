@@ -8,7 +8,20 @@ public folder.
 
 ## Usage
 ```bash
-$ django-admin.py startproject --template=https://github.com/MichaelCombs28/django-cookiecutter-template/archive/master.zip --extension=py,rst,html <project_name>
+$ django-admin.py startproject --template=https://github.com/MichaelCombs28/django-cookiecutter-template/archive/master.zip --extension=py,rst,html,md,txt <project_name>
+```
+
+## Get started
+```bash
+$ cd <project_name> git init
+
+# Edit license if you want an MIT license
+$ sed -i s#'Michael Combs'#'Your Name'# LICENSE
+
+$ git remote add <your repo url>
+$ git add .
+$ git commit -m "initial commit"
+$ git push -u origin master
 ```
 
 ## Manage Commands
@@ -19,4 +32,15 @@ $ ./manage.py runserver --settings=<project_name>.settings.local
 $ export DJANGO_SETTINGS_MODULE=<project_name>.settings.local
 # then
 $ ./manage.py runserver
+```
+
+
+## Ubuntu 14.04 Dependancies
+Before running <code>pip install -r requirements.txt</code> be sure to have these libraries:
+```bash
+$sudo apt-get install python-dev libffi-dev libpng12-dev libjpeg-dev nodejs npm libpq-dev \
+libssl-dev postgresql postgresql-contrib
+
+# I use coffee and less or sass/scss depending on project
+$sudo npm install -g bower casperjs phantomjs less sass coffee yuglify
 ```
