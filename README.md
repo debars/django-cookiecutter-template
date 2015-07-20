@@ -18,6 +18,7 @@ $ cd <project_name> git init
 # Edit license if you want an MIT license
 $ sed -i s#'Michael Combs'#'Your Name'# LICENSE
 
+$ git init
 $ git remote add <your repo url>
 $ git add .
 $ git commit -m "initial commit"
