@@ -2,7 +2,7 @@
 
 from .base import *
 
-PRODUCTION = False
+DEBUG = True
 
 SECRET_KEY = 'MY_SECRET_KEY_123'
 
@@ -16,7 +16,7 @@ DATABASES = {
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['public/templates'],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -35,7 +35,7 @@ TEMPLATES = [
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'public/components'),
+    os.path.join(BASE_DIR, 'public/static'),
 )
 
 MEDIA_URL = '/media/'

@@ -16,10 +16,6 @@ import os
 # Added extra os.path.dirname to account for new base location
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
